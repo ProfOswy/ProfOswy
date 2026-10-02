@@ -33,12 +33,6 @@ Criado por: Prof. Me. Rodrigo Gonçalves (Prof Oswy)
 - Respeita a opção "reduzir movimento" do sistema.
 - Arquivo único (`index.html`), sem instalação.
 
-## Como adicionar uma nova ferramenta
-
-No `index.html`, localize o bloco `FERRAMENTAS` no início do `<script>`, copie um item e ajuste `nome`, `url`, `area`, `cor`, `estilo`, `raio` e `descricao`. O sistema solar e a lista se atualizam sozinhos.
-
-Estilos de planeta disponíveis: `eletrons`, `saturno`, `gasoso`, `relevo`, `aneis-duplos` e `crateras`.
-
 ## Licença
 
 Uso livre para fins pessoais, acadêmicos e educacionais. Redistribuição, modificações, remoção de créditos e uso comercial dependem de autorização por escrito. Veja o [LICENSE.md](LICENSE.md).
