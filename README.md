@@ -2,7 +2,7 @@
 
 **Ferramentas de Ensino Oswy**
 
-*aprender é abrir universos*
+*aprender é abrir mundos*
 
 Página central que reúne todas as ferramentas de ensino interativas do Prof Oswy. O Sol representa o conhecimento que chega pela tecnologia, e cada ferramenta é um planeta em translação ao redor dele: basta clicar no planeta para abrir a ferramenta.
 
@@ -11,7 +11,7 @@ Criado por: Prof. Me. Rodrigo Gonçalves (Prof Oswy)
 
 ## Acesse
 
-👉 **[profoswy.github.io]([https://profoswy.github.io/](https://profoswy.github.io/ProfOswy/)**
+👉 **[profoswy.github.io/ProfOswy](https://profoswy.github.io/ProfOswy/)**
 
 ## Ferramentas
 
@@ -32,6 +32,12 @@ Criado por: Prof. Me. Rodrigo Gonçalves (Prof Oswy)
 - Funciona no computador e no celular (no celular, as ferramentas aparecem em lista).
 - Respeita a opção "reduzir movimento" do sistema.
 - Arquivo único (`index.html`), sem instalação.
+
+## Como adicionar uma nova ferramenta
+
+No `index.html`, localize o bloco `FERRAMENTAS` no início do `<script>`, copie um item e ajuste `nome`, `url`, `area`, `cor`, `estilo`, `raio` e `descricao`. O sistema solar e a lista se atualizam sozinhos.
+
+Estilos de planeta disponíveis: `eletrons`, `saturno`, `gasoso`, `relevo`, `aneis-duplos` e `crateras`.
 
 ## Licença
 
