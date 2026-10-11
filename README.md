@@ -21,7 +21,8 @@ Criado por: Prof. Me. Rodrigo Gonçalves (Prof Oswy)
 | [Diagramar](https://profoswy.github.io/Diagramar/) | Estruturas | Calcula reações de apoio e traça os diagramas de esforço normal, cortante e momento fletor, com passo a passo. |
 | [Equivaler](https://profoswy.github.io/Equivaler/) | Unidades | Converte unidades passo a passo, por análise dimensional e regra de três. |
 | [Matematicar](https://profoswy.github.io/Matematicar/) | Matemática | Matemática básica, de operações e frações a porcentagem, potência e trigonometria, com exercícios gerados na hora, raciocínio passo a passo e glossário de termos. |
-| [Quimicar](https://profoswy.github.io/Quimicar/) | Química | Elementos no modelo de Bohr, com distribuição de Linus Pauling, e as ligações iônica, covalente e metálica passo a passo. |
+| [Newtonar](https://profoswy.github.io/Newtonar/) | Física | Problemas de mecânica pelas Leis de Newton, organizados por assunto, com escolha do corpo do exercício (esfera, carro, trem, cubo e outros) e resolução passo a passo. |
+| [Quimicar](https://profoswy.github.io/Quimicar/) | Química | Elementos no modelo de Bohr, com distribuição de Linus Pauling, ligações iônica, covalente e metálica, balanceamento químico e pilhas, com exercícios resolvidos. |
 | [Tensionar](https://profoswy.github.io/Tensionar/) | Resistência dos Materiais | Tensão, deformação, torção, cortante e momento de inércia com passo a passo, para madeira, concreto ou aço e diferentes seções transversais. |
 
 ## Recursos da página
@@ -32,6 +33,12 @@ Criado por: Prof. Me. Rodrigo Gonçalves (Prof Oswy)
 - Funciona no computador e no celular (no celular, as ferramentas aparecem em lista).
 - Respeita a opção "reduzir movimento" do sistema.
 - Arquivo único (`index.html`), sem instalação.
+
+## Como adicionar uma nova ferramenta
+
+No `index.html`, localize o bloco `FERRAMENTAS` no início do `<script>`, copie um item e ajuste `nome`, `url`, `area`, `cor`, `estilo`, `raio` e `descricao`. O sistema solar e a lista se atualizam sozinhos.
+
+Estilos de planeta disponíveis: `eletrons`, `saturno`, `gasoso`, `relevo`, `aneis-duplos`, `crateras` e `maca`.
 
 ## Licença
 

@@ -17,7 +17,7 @@ Copyright © 2026 Prof. Me. Rodrigo Gonçalves (Prof Oswy). Todos os direitos re
 
 ## Ferramentas vinculadas
 
-Cada ferramenta acessada por esta página (CotaCurva, Diagramar, Equivaler, Matematicar, Quimicar e Tensionar) possui repositório e licença próprios.
+Cada ferramenta acessada por esta página (CotaCurva, Diagramar, Equivaler, Matematicar, Newtonar, Quimicar e Tensionar) possui repositório e licença próprios.
 
 ## Isenção de responsabilidade
 

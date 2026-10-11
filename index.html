@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Órbita do Conhecimento — Ferramentas de Ensino Oswy</title>
-<meta name="description" content="Central de ferramentas didáticas interativas do Prof Oswy: Quimicar, Matematicar, Equivaler, CotaCurva, Diagramar e Tensionar.">
+<meta name="description" content="Central de ferramentas didáticas interativas do Prof Oswy: Quimicar, Matematicar, Equivaler, CotaCurva, Diagramar, Tensionar e Newtonar.">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☀️</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -294,7 +294,7 @@ footer .contatos{display:flex;flex-wrap:wrap;gap:6px 20px}
    para a mais distante). A lista abaixo do sistema é
    ordenada automaticamente em ordem alfabética.
    "estilo" define a aparência do planeta:
-   eletrons | saturno | gasoso | relevo | aneis-duplos | crateras
+   eletrons | saturno | gasoso | relevo | aneis-duplos | crateras | maca
    ========================================================= */
 const CANAL = "https://youtube.com/@ProfOswy";
 
@@ -305,7 +305,7 @@ const FERRAMENTAS = [
     area: "Química",
     cor: "#1FA37A",
     estilo: "eletrons", raio: 20,
-    descricao: "Explore cada elemento no modelo de Bohr, com prótons, nêutrons, elétrons, camadas e distribuição de Linus Pauling, e entenda passo a passo as ligações iônica, covalente e metálica."
+    descricao: "Explore cada elemento no modelo de Bohr, com prótons, nêutrons, elétrons, camadas e distribuição de Linus Pauling, entenda passo a passo as ligações iônica, covalente e metálica e pratique balanceamento químico e pilhas com exercícios resolvidos."
   },
   {
     nome: "Matematicar",
@@ -346,6 +346,14 @@ const FERRAMENTAS = [
     cor: "#0E9AA7",
     estilo: "crateras", raio: 21,
     descricao: "Calcule tensão, deformação, torção, cortante e momento de inércia com passo a passo, escolhendo o material (madeira, concreto ou aço) e a seção transversal."
+  },
+  {
+    nome: "Newtonar",
+    url: "https://profoswy.github.io/Newtonar/",
+    area: "Física",
+    cor: "#C92A2A",
+    estilo: "maca", raio: 23,
+    descricao: "Resolva problemas de mecânica pelas Leis de Newton, organizados por assunto, escolhendo o corpo do exercício (esfera, carro, trem, cubo e outros), com resolução passo a passo."
   }
 ];
 
@@ -524,6 +532,12 @@ function criaPlaneta(f, i){
         textura.appendChild(el("circle", {cx:x, cy:y, r:cr, fill:"#000", opacity:.16})));
       [[34, 12, 5, 0, 3], [42, 15, 7.5, 2, 2.4], [50, 18, 10.5, 4, 2]].forEach(([rx, ry, per, fase, lr]) =>
         luas.push({ el: el("circle", {r:lr, fill:cor, opacity:.85}), rx, ry, inc:8, per, fase }));
+      break;
+    case "maca": /* referência à maçã de Newton: cabinho, folha e uma lua "caindo" */
+      frente.appendChild(el("path", {d:`M 0 ${-r+3} q 2 -8 6 -12`, fill:"none", stroke:"#5B3A1E", "stroke-width":2.4, "stroke-linecap":"round"}));
+      frente.appendChild(el("path", {d:`M 4 ${-r-6} q 12 -8 18 2 q -10 6 -18 -2 z`, fill:"#2F9E44"}));
+      textura.appendChild(el("path", {d:`M -10 ${-r+6} q 10 6 20 0`, fill:"none", stroke:"#000", "stroke-width":1.4, opacity:.18}));
+      luas.push({ el: el("circle", {r:4.5, fill:cor, opacity:.85}), rx:6, ry:38, inc:0, per:5, fase:1 });
       break;
   }
   luas.forEach(l => { frente.appendChild(l.el); l.frente = true; });
