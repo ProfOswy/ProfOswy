@@ -56,7 +56,6 @@
 
 *,*::before,*::after{box-sizing:inherit}
 html{scroll-padding-top:env(safe-area-inset-top,0px);background:var(--ceu)}
-
 body{
   margin:0; min-height:100%; color:var(--tinta); background:var(--ceu);
   font-family:var(--sans); font-size:17px; line-height:1.55;
@@ -179,6 +178,9 @@ footer .contatos{display:flex;flex-wrap:wrap;gap:6px 20px}
   .marca::after{top:4px;height:5px}
 }
 </style>
+<!-- Contador de visitas (GoatCounter) -->
+<script data-goatcounter="https://profoswy.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
 </head>
 <body>
 <svg id="rabiscos" aria-hidden="true">
@@ -598,7 +600,6 @@ function quadro(t){
 }
 posiciona();
 if (!semMovimento) requestAnimationFrame(quadro);
-<script data-goatcounter="https://profoswy.goatcounter.com/count"
-async src="//gc.zgo.at/count.js"></script>
+</script>
 </body>
 </html>
